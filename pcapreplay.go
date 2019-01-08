@@ -55,16 +55,21 @@ func createGui() {
 
 	commons.InterfacesPane = gui.CreateHPanel(commons.MainPane, "Net interfaces", false)
 	commons.Interfaces = gui.CreateComboBox(commons.InterfacesPane, true)
+	commons.Interfaces.OnSelected(func(*ui.Combobox) {
+		intfs, _ := net.Interfaces()
+
+		commons.IntfId = intfs[commons.Interfaces.Selected()].Name
+	})
 
 	commons.ReplayPane = gui.CreateVPanel(commons.MainPane, "Replay", true)
 	filePane := ui.NewHorizontalBox()
-	fileField := ui.NewEntry()
-	filePane.Append(fileField, true)
+	commons.FileField = ui.NewEntry()
+	filePane.Append(commons.FileField, true)
 	fileSearchBtn := ui.NewButton("…")
 	fileSearchBtn.OnClicked(func(*ui.Button) {
 		commons.PcapFile = ui.OpenFile(commons.MainWin)
 
-		fileField.SetText(commons.PcapFile)
+		commons.FileField.SetText(commons.PcapFile)
 		pcap.Infos(commons.PcapFile)
 	})
 	filePane.Append(fileSearchBtn, false)
