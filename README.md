@@ -5,7 +5,7 @@ PCAP Replay is a small pcap/pcapng file replay tool over network *like* tcprepla
 The goal of this tool are :
 --
 
-* being able to be compiled for Windows, as there is a real like of tool like tcpreplay for this OS
+* being able to be compiled for Windows, as there is a real lack of tool like tcpreplay for this OS
 * step by step functionnality when you need to be able to replay packets one at a time
 
 
@@ -19,7 +19,7 @@ Dependencies :
 
 ### Usage :
 
-pcapreplay can be used like tcpreplay on the cli only, but you can also ask for a MMI to be able to use step by step functionnality.
+pcapreplay can be used like tcpreplay on the command line only, but you can also ask for a MMI to be able to use step by step functionnality.
 
 Command line options :
 
