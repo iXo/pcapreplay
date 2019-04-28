@@ -16,6 +16,13 @@ Dependencies :
 * [andlabs ui](https://github.com/andlabs/ui) for the MMI
 * [urfave cli](https://github.com/urfave/cli) for command line parsing
 
+Build :
+--
+
+You will have to enable go mod fonctinality to be able to build this project :
+
+* export GO111MODULE=on
+* go mod vendor
 
 ### Usage :
 

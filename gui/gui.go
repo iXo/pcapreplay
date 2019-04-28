@@ -39,7 +39,7 @@ package gui
 import (
 	"github.com/andlabs/ui"
 
-	"kawaiyume.net/pcapreplay/commons"
+	"pcapreplay/commons"
 )
 
 func CreateMainWindow(title string) (*ui.Window, *ui.Box) {

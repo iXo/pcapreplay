@@ -47,8 +47,8 @@ import (
 	"github.com/google/gopacket"
 	"github.com/google/gopacket/pcap"
 
-	"kawaiyume.net/pcapreplay/commons"
-	"kawaiyume.net/pcapreplay/gui"
+	"pcapreplay/commons"
+	"pcapreplay/gui"
 )
 
 // replay a packet with a sleep if need after

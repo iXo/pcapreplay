@@ -45,9 +45,9 @@ import (
 	"github.com/andlabs/ui"
 	_ "github.com/andlabs/ui/winmanifest"
 
-	"kawaiyume.net/pcapreplay/gui"
-	"kawaiyume.net/pcapreplay/pcap"
-	"kawaiyume.net/pcapreplay/commons"
+	"pcapreplay/gui"
+	"pcapreplay/pcap"
+	"pcapreplay/commons"
 )
 
 func createGui() {
